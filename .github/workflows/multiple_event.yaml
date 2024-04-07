@@ -3,7 +3,7 @@ on:
   push: # 1.on push
   issues: # 2.on issue
     types: [opend]
-  workflow_dispatch: # 3.workflow dispatch
+  workflow_dispatch: # 3.on workflow dispatch
 
 jobs:
   pull-request-job:
