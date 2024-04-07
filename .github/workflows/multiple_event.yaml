@@ -1,0 +1,17 @@
+name: multiple-event-workflow
+on:
+  push: # 1.on push
+  issues: # 2.on issue
+    types: [opend]
+  workflow_dispath: # 3.workflow dispatch
+
+jobs:
+  pull-request-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo hello world
+      - name: step2
+        run: | # multi line commands
+          echo hello world
+          echo hello chosaengttal
