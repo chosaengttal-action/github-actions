@@ -7,3 +7,7 @@ jobs:
     steps:
       - name: step1
         run: echo hello world
+      - name: step2
+        run: | # multi line commands
+          echo hello world
+          echo hello chosaengttal
