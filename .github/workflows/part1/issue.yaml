@@ -13,3 +13,5 @@ jobs:
         run: |
           echo hello world
           echo hello chosaengttal
+      - name: echo my name
+        run: echo chosaengttal
