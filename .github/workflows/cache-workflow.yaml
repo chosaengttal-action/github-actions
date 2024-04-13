@@ -1,6 +1,6 @@
 name: cache-workflow
 on:
-  push:
+  path:
     - 'my-app/**'
 
 jobs:
