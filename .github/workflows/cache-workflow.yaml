@@ -2,7 +2,7 @@ name: cache-workflow
 on:
   push:
     paths:
-      - 'my-app/**'
+    - 'my-app/**'
 
 jobs:
   runs-on: ubuntu-latest
