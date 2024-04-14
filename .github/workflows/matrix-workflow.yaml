@@ -1,0 +1,15 @@
+name: matrix workflow
+on: push
+
+jobs:
+  strategy:
+    matrix:
+      os: [windows-latest, ubuntu-latest]
+      version: [12, 14]
+  get-matrix:
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: echo
+        run: |
+          echo $${{ matrix.os }}
+          echo $${{ matrix.version }}
