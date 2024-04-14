@@ -1,0 +1,9 @@
+name: ver-2 workflow
+on: push
+
+jobs:
+  get-var:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get var
+        run: echo ${{ vars.level }}
