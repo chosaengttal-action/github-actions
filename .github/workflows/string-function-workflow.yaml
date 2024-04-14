@@ -1,0 +1,27 @@
+name: string function workflow
+on: push
+
+jobs:
+  string-function:
+    runs-on: ubuntu-latest
+    steps:
+      - name: startsWith
+        if: startsWith('github action', 'git')
+        run: echo "git"
+      - name: startsWith
+        if: startsWith('github action', 'test')
+        run: echo "test"
+
+      - name: endsWith
+        if: endsWith('github action', 'ion')
+        run: echo "action"
+      - name: startsWith
+        if: startsWith('github action', 'test')
+        run: echo "test"
+
+      - name: contains
+        if: contains('github action', 'act')
+        run: echo "action"
+      - name: contains
+        if: contains('github action', 'test')
+        run: echo "test"
